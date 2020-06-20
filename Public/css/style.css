@@ -51,29 +51,6 @@ button {
     line-height: 2.5em;
 }
 
-@media only screen and (max-device-width: 992px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .loginform {
-        width: 100%;
-    }
-
-    body {
-        font-size: 48px;
-    }
-
-    .logo > img {
-        width: 15em;
-    }
-
-    button, .loginform > input {
-        font-size: 1em;
-        border-radius: 2em;
-    }
-}
-
 h1 {
     color: #FFFFFF;
     font-style: normal;
@@ -344,4 +321,166 @@ th {
     color: #FFFFFF;
     border: 1px solid #f1f1f1;
     width: 200px;
+}
+
+.btn-danger {
+    background: darkred;
+    border-radius: 50px;
+}
+
+/*********************************************************/
+/*small screen*/
+@media only screen and (max-device-width: 992px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .loginform {
+        width: 100%;
+    }
+
+    body {
+        font-size: 48px;
+    }
+
+    .logo > img {
+        width: 15em;
+    }
+
+    button, .loginform > input {
+        font-size: 1em;
+        border-radius: 2em;
+    }
+
+    .msglogout {
+        font-size: 1em;
+    }
+
+    .containermenu{
+        display: flex;
+        flex-direction: column;
+        min-height: min-content;
+        background: linear-gradient(180deg, #8504EA 0%, rgba(75, 1, 134, 0.97) 100%);
+        width: 100%;
+        align-content: flex-start;
+        padding: 10px;
+        flex: 1;
+        overflow: auto;
+    }
+
+    .containerbody{
+        display: flex;
+        flex-direction: column;
+        min-height: min-content;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: flex-start;
+        width: inherit;
+
+        grid-template-columns: none;
+
+    }
+
+    .boxmenubutton{
+        display: flex;
+        flex-direction: column;
+        min-height: min-content;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 1em;
+        border-radius: 2em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .menu > div:nth-child(4) {
+        grid-column: 4;
+    }
+
+    .menu > div:nth-child(3) {
+        grid-column: 3;
+    }
+
+    .menu > div:nth-child(2) {
+        grid-column: 2;
+    }
+
+    .menubutton{
+        width: 900px;
+    }
+
+    .moviebox {
+        position: center;
+        width: 900px;
+        height: 600px;
+        margin: 10px;
+
+        padding: 0;
+
+        background: #9004FF;
+        box-shadow: 0;
+        border-radius: 0;
+
+        color: white;
+        line-height: 2.5em;
+    }
+
+    .moviebox .movieboxcontent {
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 100%; /* Full width */
+        height: 40%;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    input[type=radio] {
+        display:none;
+        margin:10px;
+    }
+    input[type=radio] + .labeldate {
+        width: 2em;
+        height: 2em;
+        font: 2em Arial, sans-serif;
+    }
+
+    input[type=radio] + .labeltime {
+        width: 3em;
+        height: 2em;
+        padding: 0;
+        font: 1.5em Arial, sans-serif;
+    }
+
+    .dateandtimetitle {
+        font: 2em Arial, sans-serif;
+    }
+
+    .divsubtitle {
+        font: 1em Arial, sans-serif;
+    }
+
+    .dateandtimeday {
+        font: 1em Arial, sans-serif;
+    }
+
+    .seatStructure{
+        display: flex;
+        flex-direction: column;
+
+    }
 }
